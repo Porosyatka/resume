@@ -7,82 +7,105 @@
 	<meta name="keywords" content="cv, resume">
 	<meta name="description" content="Это сайт-резюме">
 	<title>Resume</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-	<img src="img/01.jpg" alt="Мое фото" width="200">
-	<h1>Тони Старк</h1>
-
-	<p>Я просто не гожусь в герои — это ясно. С моим-то списком недостатков и ошибок, совершённых в основном публично. — Скажу честно… Я — <strong>Железный человек.</strong></p>
-
-	<P><em>Гений, миллиардер, плейбой, филантроп.</em></P>
+	<div class="container">
+		<div class="info">
+			<div class="info-column info-column-img">
+				<img class="avatar" src="img/01.jpg" alt="Мое фото">
+			</div>
+			<div class="info-column info-column-text">
+				<div class="info-text">
+					<h1>Тони Старк</h1>
+				
+					<p>Я просто не гожусь в герои — это ясно. С моим-то списком недостатков и ошибок, совершённых в основном публично. — Скажу честно… Я — <strong>Железный человек.</strong></p>
+					
+					<P><em>Гений, миллиардер, плейбой, филантроп.</em></P>
+					
+					<h4>Список социальных сетей:</h4>
+					<a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+					<a href="https://web.telegram.org/" target="_blank">Telegram</a> |
+					<a href="https://www.youtube.com/" target="_blank">Youtube</a>
+				</div>
+			</div>
+		</div>
+		<div class="card bg-green">
+			<h2>Мои хобби</h2>
+			<ol class="list">
+				<li>Путешествия</li>
+				<li>Вкусно поесть</li>
+				<li>Сладко поспать</li>
+				<li>Спасасть мир</li>
+			</ol>
+		</div>
 	
-	<h4>Список социальных сетей:</h4>
-	<a href="https://www.instagram.com/" target="_blank">Instagram</a> |
-	<a href="https://web.telegram.org/" target="_blank">Telegram</a> |
-	<a href="https://www.youtube.com/" target="_blank">Youtube</a>
-
-	<h2>Мои хобби</h2>
-	<ul>
-		<li>Путешествия</li>
-		<li>Вкусно поесть</li>
-		<li>Сладко поспать</li>
-		<li>Спасасть мир</li>
-	</ul>
-
-	<h2>Опыт работы</h2>
-	<table>
-		<thead>
-			<tr>
-				<th>Название</th>
-				<th>Должность</th>
-				<th>Год</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Аэрофлот</td>
-				<td>Второй пилот</td>
-				<td>2010-2012</td>
-			</tr>
-			<tr>
-				<td>Аэрофлот</td>
-				<td>КВС</td>
-				<td>2012-2018</td>
-			</tr>
-			<tr>
-				<td>РЖД</td>
-				<td>Машинист</td>
-				<td>2018-2020</td>
-			</tr>
-			<tr>
-				<td>Атомфлот</td>
-				<td>Капитан корабля</td>
-				<td>2020-сейчас</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<h2>Связаться со мной</h2>
-	<form action="/">
-		<div>
-			<label for="name">Ваше имя:</label>
-			<input type="text" id="name" placeholder="Введите имя">
+		<div class="card bg-blue">
+			<h2>Опыт работы</h2>
+			<table class="table">
+				<!-- <thead>
+					<tr>
+						<th>Название</th>
+						<th>Должность</th>
+						<th>Год</th>
+					</tr>
+				</thead> -->
+				<tbody>
+					<tr>
+						<td>Аэрофлот</td>
+						<td>Второй пилот</td>
+						<td>2010-2012</td>
+					</tr>
+					<tr>
+						<td>Аэрофлот</td>
+						<td>КВС</td>
+						<td>2012-2018</td>
+					</tr>
+					<tr>
+						<td>РЖД</td>
+						<td>Машинист</td>
+						<td>2018-2020</td>
+					</tr>
+					<tr>
+						<td>Атомфлот</td>
+						<td>Капитан корабля</td>
+						<td>2020-сейчас</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
-
-		<div>
-			<label for="email">Ваш email:</label>
-			<input type="email" id="email" placeholder="Введите email">
+		<div class="card bg-pink">
+			<h2>Мои проекты:</h2>
+			<ul class="projects">
+				<li><a href="#">Мои игры</a></li>
+				<li><a href="#">Мои приложения</a></li>
+				<li><a href="#">Мои сайты</a></li>
+			</ul>
 		</div>
+		<form  action="/" class="form">
+			<h2>Связаться со мной</h2>
 
-		<div>
-			<label for="message">Ваше сообщение:</label>
-			<br>
-			<textarea id="message" cols="20" rows="5" placeholder="Введите сообщение:">
-			</textarea>
-		</div>
-
-			<button type="submit">Отправить!</button>
-	</form>
+			<div class="form-row">
+				<div class="form-group">
+					<label for="name">Ваше имя:</label>
+					<input type="text" id="name" placeholder="Введите имя">
+				</div>
+		
+				<div class="form-group">
+					<label for="email">Ваш email:</label>
+					<input type="email" id="email" placeholder="Введите email">
+				</div>
+			</div>
 	
+			<div class="form-group">
+				<label for="message">Ваше сообщение:</label>
+				<textarea id="message" cols="20" rows="5" placeholder="Введите сообщение:">
+				</textarea>
+			</div>
+	
+				<button class="btn" type="submit">Отправить!</button>
+		</form>
+	</div>
 </body>
 </html>
